@@ -1,0 +1,14 @@
+function ehPalindromo(str) {
+    const str = str.replace.toLowerCase();
+    let esquerda = 0;
+    let direita = str.length - 1;
+
+    while (esquerda < direita) {
+        if (str[esquerda] !== str[direita]) {
+            return false;
+        }
+        esquerda++;
+        direita--;
+    }
+
+    return true;
